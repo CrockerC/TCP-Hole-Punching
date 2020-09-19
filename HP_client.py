@@ -1,5 +1,8 @@
 import socket
 import threading
+import time
+import concurrent.futures
+
 
 def tcpHP(local, cPub, cPriv, to=5):
     timeout = time.time() + to
